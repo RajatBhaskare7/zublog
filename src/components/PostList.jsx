@@ -8,8 +8,11 @@ function PostList() {
   const apiUrl = import.meta.env.VITE_API_URL; 
   console.log(apiUrl);
   useEffect(() => {
-    axios.get(apiUrl+'https://blog-app-backend-fx8j.onrender.com/posts')
-      .then(response => setPosts(response.data))
+    axios.get('https://blog-app-backend-fx8j.onrender.com/posts')
+      .then(response => {
+        setPosts(response.data);
+        console.log(response.data);
+      })
       .catch(error => console.error('Error fetching posts:', error));
   }, []);
 

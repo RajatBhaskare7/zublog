@@ -60,7 +60,7 @@ function PostForm() {
         
          </div>
 
-         <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded-lg">Submit</button>
+         <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded-lg" type="submit">Create Post</button>
        </form>
      </div>
    </div>
